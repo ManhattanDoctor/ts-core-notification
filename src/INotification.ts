@@ -1,5 +1,5 @@
 import { INotificationMessage } from './INotificationMessage';
-import { INotifable, INotifableUid } from './INotifable';
+import { INotifable, NotifableUid } from './INotifable';
 import { Type } from 'class-transformer';
 
 export enum NotificationStatus {
@@ -27,7 +27,7 @@ export class Notification<U = string, V = any> implements INotification<U, V> {
     type: U;
     status: NotificationStatus;
     channel: string;
-    notifableUid: INotifableUid;
+    notifableUid: NotifableUid;
 
     @Type(() => Date)
     createdAt: Date;

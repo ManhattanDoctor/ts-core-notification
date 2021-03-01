@@ -1,11 +1,11 @@
-export type INotifableUid = number | string;
+export type NotifableUid = number | string;
 
 export interface INotifable {
-    notifableUid: INotifableUid;
+    notifableUid: NotifableUid;
 }
 
 export interface INotifablePreferences<T = string> {
     type: T;
     channels: Array<string>;
-    notifableUid: INotifableUid;
+    notifableUid: NotifableUid;
 }
