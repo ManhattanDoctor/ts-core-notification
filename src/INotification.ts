@@ -12,6 +12,7 @@ export enum NotificationStatus {
 }
 
 export interface INotification<U = string, V = any> extends INotifable {
+    id: number;
     type: U;
     status: NotificationStatus;
     channel: string;
@@ -24,6 +25,7 @@ export interface INotification<U = string, V = any> extends INotifable {
 }
 
 export class Notification<U = string, V = any> implements INotification<U, V> {
+    id: number;
     type: U;
     status: NotificationStatus;
     channel: string;
