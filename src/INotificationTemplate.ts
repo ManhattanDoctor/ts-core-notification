@@ -11,11 +11,14 @@ export interface INotificationTemplate<T = string> extends INotificationMessage 
     updatedDate: Date;
 }
 
-export class NotificationTemplate<T = string> implements NotificationTemplate<T> {
+export class NotificationTemplate<T = string> implements INotificationTemplate<T> {
     id: number;
     type: T;
     locale: string;
     channel: string;
+
+    text: string;
+    subject?: string;
 
     @Type(() => Date)
     createdDate: Date;
