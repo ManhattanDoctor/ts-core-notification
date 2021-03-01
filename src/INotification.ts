@@ -17,7 +17,7 @@ export interface INotification<U = string, V = any> extends INotifable {
     status: NotificationStatus;
     channel: string;
 
-    createdAt: Date;
+    createdDate: Date;
     updatedDate: Date;
 
     details?: V;
@@ -32,7 +32,7 @@ export class Notification<U = string, V = any> implements INotification<U, V> {
     notifableUid: NotifableUid;
 
     @Type(() => Date)
-    createdAt: Date;
+    createdDate: Date;
 
     @Type(() => Date)
     updatedDate: Date;
