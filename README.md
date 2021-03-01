@@ -1,2 +1,2 @@
-# ts-core-notification-common
+# ts-core-notification
 Common classes for notifications
