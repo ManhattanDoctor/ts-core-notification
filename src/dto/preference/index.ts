@@ -1,3 +1,3 @@
-export * from './INotifablePreferenceAddDto';
-export * from './INotifablePreferenceListDto';
-export * from './INotifablePreferenceEditDto';
+export * from './INotificationPreferenceAddDto';
+export * from './INotificationPreferenceListDto';
+export * from './INotificationPreferenceEditDto';
