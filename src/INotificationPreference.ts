@@ -11,6 +11,7 @@ export interface INotificationPreference<T = string> {
     updatedDate: Date;
 }
 
+
 export class NotificationPreference<T = string> implements INotificationPreference<T> {
     id: number;
     type: T;
