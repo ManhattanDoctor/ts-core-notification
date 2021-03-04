@@ -1,9 +1,10 @@
 import { ITraceable } from '@ts-core/common/trace';
+import { NotifableUid } from '../../INotifable';
 import { INotificationPreference } from '../../INotificationPreference';
 
 export interface INotificationPreferenceEditDto extends ITraceable {
-    id: number;
-    channels: Array<string>;
+    notifableUid: NotifableUid;
+    items: Array<{ type: string; channels: Array<string> }>;
 }
 
-export declare type INotificationPreferenceEditDtoResponse = INotificationPreference;
+export declare type INotificationPreferenceEditDtoResponse = Array<INotificationPreference>;
