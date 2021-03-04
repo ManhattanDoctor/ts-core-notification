@@ -9,5 +9,5 @@ export interface INotificationPreferenceListDtoResponse<T = string> extends Arra
 export interface INotificationPreferenceItem<T = string> {
     type: T;
     channels: Array<string>;
-    channelsAvailable: Array<string>;
+    channelsAllowed: Array<string>;
 }
