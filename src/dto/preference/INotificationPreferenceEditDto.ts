@@ -3,9 +3,9 @@ import { NotifableUid } from '../../INotifable';
 import { INotificationPreference } from '../../INotificationPreference';
 import { INotificationPreferenceItem } from './INotificationPreferenceListDto';
 
-export interface INotificationPreferenceEditDto<T = string> extends ITraceable {
+export interface INotificationPreferenceEditDto extends ITraceable {
     notifableUid: NotifableUid;
-    items: Array<INotificationPreferenceItem<T>>;
+    items: Array<INotificationPreferenceItem>;
 }
 
-export declare type INotificationPreferenceEditDtoResponse<T = string> = Array<INotificationPreference<T>>;
+export declare type INotificationPreferenceEditDtoResponse = Array<INotificationPreference>;
