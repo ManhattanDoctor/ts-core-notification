@@ -1,8 +1,6 @@
-import { IFilterable } from '@ts-core/common/dto';
 import { ITraceable } from '@ts-core/common/trace';
-import { INotificationPreference } from '../../INotificationPreference';
 
-export interface INotificationPreferenceListDto<T = string> extends IFilterable<INotificationPreference<T>>, ITraceable {}
+export interface INotificationPreferenceListDto extends ITraceable {}
 
 export interface INotificationPreferenceListDtoResponse<T = string> extends Array<INotificationPreferenceItem<T>> {}
 
