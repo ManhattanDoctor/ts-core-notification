@@ -1,6 +1,6 @@
 {
     "name": "@ts-core/notification",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "Classes and utils for notifications",
     "main": "index.js",
     "scripts": {},
