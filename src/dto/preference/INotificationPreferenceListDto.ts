@@ -10,6 +10,7 @@ export interface INotificationPreferenceItem<T = string> extends INotificationPr
     channelsAvailable: Array<string>;
 }
 
+
 export class NotificationPreferenceItem<T = string> extends NotificationPreference<T> implements INotificationPreferenceItem<T> {
     channelsAvailable: Array<string>;
 }
