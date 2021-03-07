@@ -6,6 +6,8 @@ export interface INotificationTemplateAddDto extends ITraceable {
     locale: string;
     channel: string;
 
+    params?: Array<string>;
+    
     text: string;
     subject?: string;
 }

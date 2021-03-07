@@ -9,6 +9,8 @@ export interface INotificationTemplate extends INotificationMessage {
 
     createdDate: Date;
     updatedDate: Date;
+
+    params?: Array<string>;
 }
 
 export class NotificationTemplate implements INotificationTemplate {

@@ -4,7 +4,7 @@ import { INotificationMessage } from './INotificationMessage';
 
 export interface INotificationSender<U extends INotifable = INotifable> {
     readonly channel: string;
-    send(notifable: U, message?: INotificationMessage): Promise<INotificationSenderResult>;
+    send(notifable: U, message: INotificationMessage, type: string, details: any): Promise<INotificationSenderResult>;
 }
 
 export interface INotificationSenderResult {
