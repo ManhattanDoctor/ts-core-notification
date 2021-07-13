@@ -12,4 +12,4 @@ export interface INotificationTemplateAddDto<U = string> extends ITraceable {
     subject?: string;
 }
 
-export declare type INotificationTemplateAddDtoResponse<U> = INotificationTemplate;
+export declare type INotificationTemplateAddDtoResponse<U = string> = INotificationTemplate<U>;
