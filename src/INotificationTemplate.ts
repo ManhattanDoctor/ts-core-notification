@@ -1,9 +1,9 @@
 import { INotificationMessage } from './INotificationMessage';
 import { Type } from 'class-transformer';
 
-export interface INotificationTemplate extends INotificationMessage {
+export interface INotificationTemplate<U = string> extends INotificationMessage {
     id: number;
-    type: string;
+    type: U;
     locale: string;
     channel: string;
 
@@ -13,9 +13,9 @@ export interface INotificationTemplate extends INotificationMessage {
     params?: Array<string>;
 }
 
-export class NotificationTemplate implements INotificationTemplate {
+export class NotificationTemplate<U = string> implements INotificationTemplate<U> {
     id: number;
-    type: string;
+    type: U;
     locale: string;
     channel: string;
 

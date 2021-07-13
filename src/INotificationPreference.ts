@@ -1,9 +1,9 @@
 import { NotifableUid } from './INotifable';
 import { Type } from 'class-transformer';
 
-export interface INotificationPreference {
+export interface INotificationPreference<U = string> {
     id: number;
-    type: string;
+    type: U;
     channels: Array<string>;
     notifableUid: NotifableUid;
 
@@ -11,10 +11,9 @@ export interface INotificationPreference {
     updatedDate: Date;
 }
 
-
-export class NotificationPreference implements INotificationPreference {
+export class NotificationPreference<U = string> implements INotificationPreference<U> {
     id: number;
-    type: string;
+    type: U;
     channels: Array<string>;
     notifableUid: NotifableUid;
 

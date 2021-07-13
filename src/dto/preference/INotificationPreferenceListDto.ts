@@ -2,10 +2,10 @@ import { ITraceable } from '@ts-core/common/trace';
 
 export interface INotificationPreferenceListDto extends ITraceable {}
 
-export interface INotificationPreferenceListDtoResponse extends Array<INotificationPreferenceItem> {}
+export interface INotificationPreferenceListDtoResponse<U = string> extends Array<INotificationPreferenceItem<U>> {}
 
-export interface INotificationPreferenceItem {
-    type: string;
+export interface INotificationPreferenceItem<U = string> {
+    type: U;
     channels: Array<string>;
-    channelsAllowed: Array<string>;
+    channelsAvailable: Array<string>;
 }

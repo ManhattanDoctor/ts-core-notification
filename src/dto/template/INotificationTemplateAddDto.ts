@@ -1,15 +1,15 @@
 import { ITraceable } from '@ts-core/common/trace';
 import { INotificationTemplate } from '../../INotificationTemplate';
 
-export interface INotificationTemplateAddDto extends ITraceable {
-    type: string;
+export interface INotificationTemplateAddDto<U = string> extends ITraceable {
+    type: U;
     locale: string;
     channel: string;
 
     params?: Array<string>;
-    
+
     text: string;
     subject?: string;
 }
 
-export declare type INotificationTemplateAddDtoResponse = INotificationTemplate;
+export declare type INotificationTemplateAddDtoResponse<U> = INotificationTemplate;

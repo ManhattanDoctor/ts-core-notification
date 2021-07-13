@@ -14,7 +14,7 @@ export enum NotificationChannelStatus {
     NOT_ACTIVE = 'NOT_ACTIVE'
 }
 
-export interface INotificationChannel extends IDestroyable {
-    type: string;
+export interface INotificationChannel<U = string> extends IDestroyable {
+    type: U;
     status: NotificationChannelStatus;
 }
