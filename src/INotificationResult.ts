@@ -4,3 +4,4 @@ export interface INotificationResult<T = any> {
     status: NotificationStatus;
     details?: T;
 }
+
