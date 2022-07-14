@@ -1,5 +1,5 @@
-import { ITraceable } from '@ts-core/common/trace';
-import { IPaginable, IPagination } from '@ts-core/common/dto';
+import { ITraceable } from '@ts-core/common';
+import { IPaginable, IPagination } from '@ts-core/common';
 import { INotificationTemplate } from '../../INotificationTemplate';
 
 export interface INotificationTemplateListDto extends IPaginable<INotificationTemplate>, ITraceable {}

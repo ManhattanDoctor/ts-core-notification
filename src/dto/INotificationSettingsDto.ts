@@ -1,4 +1,4 @@
-import { ITraceable } from '@ts-core/common/trace';
+import { ITraceable } from '@ts-core/common';
 
 export interface INotificationsSettingsDto extends ITraceable {}
 

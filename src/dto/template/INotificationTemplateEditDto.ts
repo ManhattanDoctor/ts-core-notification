@@ -1,4 +1,4 @@
-import { ITraceable } from '@ts-core/common/trace';
+import { ITraceable } from '@ts-core/common';
 import { INotificationTemplate } from '../../INotificationTemplate';
 
 export interface INotificationTemplateEditDto<U = string> extends Partial<INotificationTemplate<U>>, ITraceable {

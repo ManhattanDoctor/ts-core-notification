@@ -1,5 +1,5 @@
 import { Loadable, LoadableEvent, LoadableStatus } from '@ts-core/common';
-import { ObservableData } from '@ts-core/common/observer';
+import { ObservableData } from '@ts-core/common';
 import * as _ from 'lodash';
 import { INotificationsSettingsDtoResponse } from '../dto';
 
