@@ -1,7 +1,7 @@
 {
     "name": "@ts-core/notification",
     "version": "3.0.1",
-    "description": "Classes and utils for notifications",
+    "description": "Common TypeScript interfaces and classes for notification systems: notifications, delivery channels, templates and per-user preferences",
     "main": "./cjs/public-api.js",
     "module": "./esm/public-api.js",
     "exports": {
@@ -28,7 +28,15 @@
         "url": "git+https://github.com/ManhattanDoctor/ts-core-notification.git"
     },
     "keywords": [
-        "typescript"
+        "typescript",
+        "notification",
+        "notifications",
+        "template",
+        "channel",
+        "email",
+        "push",
+        "preferences",
+        "messaging"
     ],
     "bugs": {
         "url": "https://github.com/ManhattanDoctor/ts-core-notification/issues"
